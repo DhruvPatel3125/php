@@ -1,35 +1,3 @@
-<?php
-// index.php
-// Include the header
-if(isset($_POST['name'])){
-    $server = "localhost";
-    $username = "root";
-    $password = "";
-
-    $con = mysqli_connect($server, $username, $password);
-
-    if (!$con) {
-        die("Connection failed to database: " . mysqli_connect_error());
-    }
-    $name = $_POST['name'];
-    $age = $_POST["age"];
-    $gender = $_POST["gender"];
-    $email = $_POST["email"];
-    $phone = $_POST["phone"];
-    $address = $_POST["address"];
-    $sql = "INSERT INTO `trip`.`trip` (`name`, `age`, `gender`, `email`, `phone`, `address`, `dt`) VALUES ('$name', '$age', '$gender', '$email', '$phone', '$address', current_timestamp());";
-    // echo $sql;
-
-    if($con->query($sql) == true){
-        //echo "Successfully inserted";
-    } else {
-        echo "Error: $sql <br> $con->error";
-    }
-    $con->close();
-}
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
