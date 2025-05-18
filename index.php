@@ -51,7 +51,6 @@ if(isset($_POST['name'])){
             <input type="number" name="phone" placeholder="Enter your phone number" >
             <input type="text" name="address" placeholder="Enter your address" >
             <button class="btn" type="submit">Submit</button>
-           
         </form>
     </div>
     <script src="index.js"></script>
