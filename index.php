@@ -14,6 +14,7 @@ if(isset($_POST['name'])){
     $name = $_POST['name'];
     $age = $_POST["age"];
     $gender = $_POST["gender"];
+    
     $email = $_POST["email"];
     $phone = $_POST["phone"];
     $address = $_POST["address"];
